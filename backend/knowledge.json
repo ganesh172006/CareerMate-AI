@@ -1,0 +1,16 @@
+{
+  "name": "CareerMate AI Placement Knowledge Base",
+  "purpose": "Editable baseline knowledge for placement preparation. Update this file without changing backend code.",
+  "topics": {
+    "DSA": "Study arrays, strings, linked lists, stacks, queues, hash maps, trees, graphs, sorting, searching, recursion, greedy algorithms and dynamic programming. Explain time and space complexity with Big-O and discuss trade-offs.",
+    "Java": "Core areas include OOP, interfaces and abstract classes, collections, generics, exceptions, streams, JVM/JRE/JDK, concurrency and testing.",
+    "Python": "Core areas include built-in data structures, functions, classes, exceptions, iterators, generators, decorators, virtual environments, testing and common standard-library tools.",
+    "DBMS": "Review relational models, keys, normalization, joins, indexes, transactions, ACID, isolation, constraints and query optimization.",
+    "Operating Systems": "Review processes vs threads, scheduling, memory management, virtual memory, deadlocks, synchronization, mutexes and semaphores.",
+    "Computer Networks": "Review OSI/TCP-IP, DNS, HTTP/HTTPS, TCP vs UDP, IP addressing, routing, TLS and client-server requests.",
+    "AI and ML": "Understand supervised and unsupervised learning, train/validation/test splits, overfitting, metrics, embeddings, LLM limitations and retrieval-augmented generation.",
+    "Interview practice": "Use STAR (Situation, Task, Action, Result) for behavioural questions. Keep answers truthful, specific, concise and focused on the candidate's actual contribution.",
+    "Resume": "Prefer readable formatting, relevant skills, action verbs and measurable results only when those metrics are real and verifiable. Never invent credentials or achievements.",
+    "Project explanation": "Explain problem, users, architecture, technologies, your contribution, testing, limitations and next steps. Clearly distinguish completed features from planned features."
+  }
+}

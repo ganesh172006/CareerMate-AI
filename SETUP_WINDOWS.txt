@@ -1,0 +1,33 @@
+CAREERMATE AI — CLEAN WINDOWS SETUP (GEMINI MODE)
+
+REQUIREMENTS
+- Python 3.11 or 3.12 recommended.
+- Node.js LTS.
+- Your own Gemini API key. Never share it in chat or upload your .env file.
+
+BACKEND SETUP
+1. Extract this folder to a simple path, e.g. C:\CareerMateAI_FINAL_FREE.
+2. Open Command Prompt in the extracted folder and run: cd backend
+3. Run: python -m pip install -r requirements.txt
+4. Copy .env.example to .env. In Windows Command Prompt run: copy .env.example .env
+5. Open backend\.env in Notepad and paste your own key after GEMINI_API_KEY=. Keep AI_PROVIDER=gemini and GEMINI_MODEL=gemini-3.8-flash unless your Google AI Studio account requires another model.
+6. Run: python -m uvicorn main:app --reload
+7. Check http://127.0.0.1:8000/api/health
+
+FRONTEND SETUP (SECOND TERMINAL)
+1. Open Command Prompt in the project folder.
+2. Run: cd frontend
+3. Run: npm install
+4. Run: npm run dev
+5. Open the localhost URL printed by Vite, usually http://localhost:5173.
+
+SPEED CHANGES IN THIS VERSION
+- Generating a mock-interview question uses the built-in question bank and does not wait for Gemini.
+- In Gemini mode, voice recordings are sent directly to Gemini instead of loading local Whisper first. Voice analysis still depends on Gemini model/audio support, internet, and API limits.
+- Chat, evaluation, resume, and project-generation features still use Gemini and therefore depend on API response time.
+
+TROUBLESHOOTING
+- If the health endpoint says Gemini is not configured, check that backend\.env exists and GEMINI_API_KEY is filled in.
+- If a model error appears, use a model available to your API key and update GEMINI_MODEL in backend\.env.
+- Do not run two different backend copies at the same time. Stop old servers with Ctrl+C before starting this folder.
+- No software can guarantee zero runtime errors on every computer; this package passed its offline source checks, but API key, internet, and model availability must be tested on your machine.
